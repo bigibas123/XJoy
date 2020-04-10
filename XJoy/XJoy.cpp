@@ -816,8 +816,7 @@ DWORD WINAPI status_report_thread(__in LPVOID lpParameter) {
     CONSOLE_SCREEN_BUFFER_INFO csbiInfo;
     GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbiInfo);
     COORD oldPos = csbiInfo.dwCursorPosition;
-    COORD p = { 0, 0 };
-    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), p);
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), { 0, 0 });
     std::cout << builder.str() << std::flush;
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), oldPos);
     ReleaseMutex(console_mutex);
