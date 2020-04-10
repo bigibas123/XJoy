@@ -64,10 +64,10 @@ versions. The default mappings are shown below:
 
 | Joy-Con Button     | Xbox Button    |
 |--------------------|----------------|
-| A                  | B              |
-| B                  | A              |
-| X                  | Y              |
-| Y                  | X              |
+| A                  | A              |
+| B                  | B              |
+| X                  | X              |
+| Y                  | Y              |
 | Left Trigger       | Left Trigger   |
 | Right Trigger      | Right Trigger  |
 | Left Shoulder      | Left Shoulder  |
@@ -77,8 +77,8 @@ versions. The default mappings are shown below:
 | Right Analog       | Right Analog   |
 | Left Stick         | Left Thumb     |
 | Right Stick        | Right Thumb    |
-| Home               | Start          |
-| Capture            | Back           |
+| Home               | Guide          |
+| Capture            | Guide          |
 | Plus               | Start          |
 | Minus              | Back           |
 
