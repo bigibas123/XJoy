@@ -805,7 +805,6 @@ DWORD WINAPI status_report_thread(__in LPVOID lpParameter) {
   for(;;) {
     if(kill_threads) break;
     std::stringstream builder;
-    builder << "XBox:\n";
     builder << "Buttons: " << std::setw(80) << std::left << rep_buttons_to_xbox_string(report.wButtons) << "\n";
     builder << "Left Trigger: " << std::setw(7) << std::right << byte_to_string(report.bLeftTrigger) << "\n";
     builder << "Right Trigger: " << std::setw(6) << std::right << byte_to_string(report.bRightTrigger) << "\n";
@@ -849,7 +848,7 @@ int main() {
     printf("CreateMutex error: %d\n", GetLastError());
     return 1;
   }
-  COORD p = { 0, 9 };
+  COORD p = { 0, 7 };
   SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), p);
 
   println(" => created console mutex");
